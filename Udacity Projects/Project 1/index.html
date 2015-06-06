@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="Project_1" content="Nick Stellitano's Portfolio" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#307699">
+
+
+    <base target="_blank">
+
+    <title>Nick Stellitano's Code Portfolio</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="lib/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="container" class = "container">
+    <div id="header" class = "row">
+        <div id="logo" class = "col-xs-4">
+
+            <figure id="reader_logo">
+                <img src ="images_src/fixed/logo.png" alt = "logo: Kid with glasses reading a book">
+            </figure>
+
+        </div>
+
+        <div id = "name_title" class = "col-xs-8 text-right">
+            <h1>NICK STELLITANO</h1>
+            <h4>PROGRAMMER</h4>
+        </div>
+
+    </div>
+
+    <div id="main_image" class = "row">
+        <div id="primary" class = "col-md-12">
+
+            <figure id="primary_image">
+                <img src = "images/main_image-1600_large_2x.jpg" alt="">
+            </figure>
+
+        </div>
+
+    </div>
+
+
+    <div id="main_content" class = "row">
+        <div id="body_title" class = "col-md-12 text-left">
+            <h2>Featured Work</h2>
+        </div>
+
+        <div id="portfolio_work" class  = "portfolio_work col-md-12">
+            <div id="body_example1" class = "work text-center">
+
+                <div id=example1">
+                    <figure>
+                        <img class="img-responsive" src ="images/boe_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project1" alt="">
+                    </figure>
+                </div>
+
+                <div id = "example1_title" class ="example_title text-center" >
+                    <h2>BOE</h2>
+                    <a href ="http://boe.competition.s3-website-us-east-1.amazonaws.com/">
+                        <h4>http://boe.competition.s3-website-us-east-1.amazonaws.com/</h4>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="body_example2" class = "work text-center">
+
+                <figure id="example2">
+                    <img class="img-responsive" src ="images/citi_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project2" alt="">
+                </figure>
+
+                <div id = "example2_title" class ="example_title text-center" >
+                    <h2>CITIBIKE</h2>
+                    <a href = "http://team-awesome.s3-website-us-east-1.amazonaws.com/">
+                        <h4>http://team-awesome.s3-website-us-east-1.amazonaws.com/</h4>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="body_example3" class = "work text-center">
+
+                <figure id="example3">
+                    <img class="img-responsive" src ="images/migraiton_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project3" alt="">
+                </figure>
+
+                <div id = "example3_title" class ="example_title text-center" >
+                    <h2>MIGRATION</h2>
+                    <a href="http://adhikarisamik.github.io/">
+                        <h4>http://adhikarisamik.github.io/</h4>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel1">Bank of England Visualization Competition</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="images/boe-800_large_1x.jpg">
+                In 2015, the Bank of England ran a visualization competition.  They published historical data to be used within a static or
+                dynamic visualization.  I utilized a Sankey Diagram to help visualize a subset of questions from the House Hold Survey data
+                spanning from 2004 to 2011.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel2">CS 109 Data Science Final Project</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="images/citibike-800_large_1x.jpg">
+                In 2014, I took CS 109 Data Science through Harvard University.  As a final project, myself and 3 other classmates chose to
+                analyze Citibike, the New York bike system.  Through the use of python and D3 we analyzed the make up and behavior of the historical
+                data of Citibike.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel3">Study of Migration and Wage differentials</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="images/migration-800_large_1x.jpg">
+                In 2015, I took CS 171 Data Visualizaiton trhough Harvard University.  As a final project, myself along with a fellow classmate chose
+                visualize the effects wage differentials have through migration on International Development.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
