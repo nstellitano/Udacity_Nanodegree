@@ -29,24 +29,24 @@
 
 <div id="container" class = "container">
     <article>
-        <header id="header" class = "row">
+        <header id="header" class = "header row">
             <div id="logo" class = "col-xs-4">
 
-                <figure id="reader_logo">
-                    <img src ="images_src/fixed/logo.png" alt = "logo: Kid with glasses reading a book">
+                <figure id="reader_logo" class = "reader_logo">
+                    <img src ="images_src/fixed/logo.png" alt = "logo: Kid with glasses reading a book" alt = "Image of a Marine Corps AV-8B Harrier refueling behind a Air Force tanker">
                 </figure>
 
             </div>
 
             <div id = "name_title" class = "col-xs-8 text-right">
-                <h1>NICK STELLITANO</h1>
-                <h4>PROGRAMMER</h4>
+                <h1 class = "header_name">NICK STELLITANO</h1>
+                <h4 class = "header_role">PROGRAMMER</h4>
             </div>
 
         </header>
     </article>
 
-    <div id="main_image" class = "row">
+    <div id="main_image" class = "main_image row">
         <div id="primary" class = "col-md-12">
 
             <figure id="primary_image">
@@ -59,20 +59,20 @@
 
 
     <section id="main_content" class = "row">
-        <div id="body_title" class = "col-md-12 text-left">
-            <h2>Featured Work</h2>
+        <div id="body_title" class = "body_title col-md-12 text-left">
+            <h2 class = "body_title_h2">Featured Work</h2>
         </div>
 
         <div id="portfolio_work" class  = "portfolio_work col-md-12">
             <article id="body_example1" class = "work text-center">
 
                 <figure id= "example1">
-                        <img class="img-responsive" src ="images/boe_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project1" alt="">
+                        <img class="img-responsive" src ="images/boe_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project1" alt="Overhead shot of the Bank of England">
 
                     <figcaption id = "example1_title" class ="example_title text-center" >
                         <h2>BOE</h2>
                         <a href ="http://boe.competition.s3-website-us-east-1.amazonaws.com/">
-                            <h4>http://boe.competition.s3-website-us-east-1.amazonaws.com/</h4>
+                            <h4 class="project_link">http://boe.competition.s3-website-us-east-1.amazonaws.com/</h4>
                         </a>
                     </figcaption>
                 </figure>
@@ -82,13 +82,13 @@
             <article id="body_example2" class = "work text-center">
 
                 <figure id="example2">
-                    <img class="img-responsive" src ="images/citi_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project2" alt="">
+                    <img class="img-responsive" src ="images/citi_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project2" alt="Picture of a row of blue bikes labeled Citi Bikes">
 
 
                     <figcaption id = "example2_title" class ="example_title text-center" >
                         <h2>CITIBIKE</h2>
                         <a href = "http://team-awesome.s3-website-us-east-1.amazonaws.com/">
-                            <h4>http://team-awesome.s3-website-us-east-1.amazonaws.com/</h4>
+                            <h4 class="project_link">http://team-awesome.s3-website-us-east-1.amazonaws.com/</h4>
                         </a>
                     </figcaption>
                 </figure>
@@ -98,13 +98,13 @@
             <article id="body_example3" class = "work text-center">
 
                 <figure id="example3">
-                    <img class="img-responsive" src ="images/migraiton_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project3" alt="">
+                    <img class="img-responsive" src ="images/migraiton_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project3" alt="Spray painted bear on bricks with the words migration is not a crime.">
 
 
                     <figcaption id = "example3_title" class ="example_title text-center" >
                         <h2>MIGRATION</h2>
                         <a href="http://adhikarisamik.github.io/">
-                            <h4>http://adhikarisamik.github.io/</h4>
+                            <h4 class="project_link">http://adhikarisamik.github.io/</h4>
                         </a>
                     </figcaption>
                 </figure>
@@ -129,7 +129,7 @@
                 <h4 class="modal-title" id="myModalLabel1">Bank of England Visualization Competition</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="images/boe-800_large_1x.jpg" alt="Overhead shot of the Bank of England">
+                <img class="img-responsive" src="images/boe-800_large_1x.jpg" alt="Picture of the visualization website with an image of a Sankey Diagram">
                 In 2015, the Bank of England ran a visualization competition.  They published historical data to be used within a static or
                 dynamic visualization.  I utilized a Sankey Diagram to help visualize a subset of questions from the House Hold Survey data
                 spanning from 2004 to 2011.
@@ -148,7 +148,7 @@
                 <h4 class="modal-title" id="myModalLabel2">CS 109 Data Science Final Project</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="images/citibike-800_large_1x.jpg" alt = "Picture of a row of blue bikes labeled Citi Bikes">
+                <img class="img-responsive" src="images/citibike-800_large_1x.jpg" alt = "Picture of the citibike analysis website with a header and circular d3 plot">
                 In 2014, I took CS 109 Data Science through Harvard University.  As a final project, myself and 3 other classmates chose to
                 analyze Citibike, the New York bike system.  Through the use of python and D3 we analyzed the make up and behavior of the historical
                 data of Citibike.
@@ -167,7 +167,7 @@
                 <h4 class="modal-title" id="myModalLabel3">Study of Migration and Wage differentials</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="images/migration-800_large_1x.jpg" alt = "Spray painted bear on bricks with the words migration is not a crime.">
+                <img class="img-responsive" src="images/migration-800_large_1x.jpg" alt = "Picture of the migration website">
                 In 2015, I took CS 171 Data Visualizaiton trhough Harvard University.  As a final project, myself along with a fellow classmate chose
                 visualize the effects wage differentials have through migration on International Development.
             </div>
