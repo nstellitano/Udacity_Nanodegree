@@ -1,29 +1,27 @@
 
-
 * {
     font-family: Lato, sans-serif;
     color: #bebebe;
 }
 
-body {
 
+body {
     min-width: 360px;
 }
 
-figure{
-
-}
 
 img {
 
     max-width: 100%
 }
 
+
 .container {
     width: 100%;
     max-width: 950px;
 
 }
+
 
 .header {
     width: 100%;
@@ -39,6 +37,7 @@ img {
     overflow: auto;
 }
 
+
 .header_name{
     font-size: 50px;
     font-weight: 100;
@@ -47,11 +46,13 @@ img {
 
 }
 
+
 .header_role{
     font-weight: 400;
     color: #3a3b02;
 
 }
+
 
 @media screen and (max-width: 700px) {
     .header_name{
@@ -59,6 +60,7 @@ img {
         transition: all 0.5s;
     }
 }
+
 
 @media screen and (max-width: 450px) {
     .header_name{
@@ -72,17 +74,16 @@ img {
 }
 
 
-
 .main_image{
 
     margin-top: 15px;
 }
 
+
 .body_title_h2 {
     font-size: 38px;
     margin-left: 10px;
 }
-
 
 
 .portfolio_work {
@@ -91,13 +92,15 @@ img {
     justify-content: space-around;
 }
 
-h2{
+
+.example_title{
     color: #3a3b02;
     font-size: 40px;
     letter-spacing: 1px;
     font-weight: 400;
 
 }
+
 
 .project_link{
     color: #3a3b02;
