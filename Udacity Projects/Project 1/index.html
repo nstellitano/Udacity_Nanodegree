@@ -3,19 +3,15 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="Project_1" content="Nick Stellitano's Portfolio" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="Project_1" content="Nick Stellitano's Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
     <meta id="theme-color" name="theme-color" content="#307699">
-
-
     <base target="_blank">
 
     <title>Nick Stellitano's Code Portfolio</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-
-
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet'>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/large.css">
 
@@ -28,14 +24,12 @@
 <body>
 
 <div id="container" class = "container">
-
         <header id="header" class = "header row">
+
             <div id="logo" class = "col-xs-4">
-
                 <figure id="reader_logo" class = "reader_logo">
-                    <img src ="images_src/fixed/logo.png" alt = "logo: Kid with glasses reading a book" alt = "Image of a Marine Corps AV-8B Harrier refueling behind a Air Force tanker">
+                    <img src ="images_src/fixed/logo.png" alt = "logo: Kid with glasses reading a book">
                 </figure>
-
             </div>
 
             <div id = "name_title" class = "col-xs-8 text-right">
@@ -49,25 +43,24 @@
         <div id="primary" class = "col-md-12">
 
             <figure id="primary_image">
-                <img src = "images/main_image-1600_large_2x.jpg" alt="">
+                <img class = "img-responsive" src= "images/main_image-1600_large_2x.jpg"  alt = "Image of a Marine Corps AV-8B Harrier refueling behind a Air Force tanker">
             </figure>
 
         </div>
-
     </div>
 
 
     <section id="main_content" class = "row">
+
         <div id="body_title" class = "body_title col-md-12 text-left">
             <h2 class = "body_title_h2">Featured Work</h2>
         </div>
 
         <div id="portfolio_work" class  = "portfolio_work col-md-12">
-            <article id="body_example1" class = "work text-center">
+            <article id="body_example1" class = "work text-center col-md-4">
 
                 <figure id= "example1">
                         <img class="img-responsive" src ="images/boe_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project1" alt="Overhead shot of the Bank of England">
-
                     <figcaption id = "example1_title" class ="example_title text-center" >
                         <h2 class="example_title">BOE</h2>
                         <a href ="http://boe.competition.s3-website-us-east-1.amazonaws.com/">
@@ -78,12 +71,10 @@
 
             </article>
 
-            <article id="body_example2" class = "work text-center">
+            <article id="body_example2" class = "work text-center col-md-4">
 
                 <figure id="example2">
                     <img class="img-responsive" src ="images/citi_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project2" alt="Picture of a row of blue bikes labeled Citi Bikes">
-
-
                     <figcaption id = "example2_title" class ="example_title text-center" >
                         <h2 class="example_title">CITIBIKE</h2>
                         <a href = "http://team-awesome.s3-website-us-east-1.amazonaws.com/">
@@ -94,12 +85,10 @@
 
             </article>
 
-            <article id="body_example3" class = "work text-center">
+            <article id="body_example3" class = "work text-center col-md-4">
 
                 <figure id="example3">
                     <img class="img-responsive" src ="images/migraiton_cover-300x200_large_300w.jpg" data-toggle="modal" data-target="#project3" alt="Spray painted bear on bricks with the words migration is not a crime.">
-
-
                     <figcaption id = "example3_title" class ="example_title text-center" >
                         <h2 class="example_title">MIGRATION</h2>
                         <a href="http://adhikarisamik.github.io/">
@@ -121,7 +110,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="example1" aria-hidden="true">
+<aside class="modal fade" id="project1" tabindex="-1" aria-labelledby="example1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -138,9 +127,9 @@
             </div>
         </div>
     </div>
-</div>
+</aside>
 
-<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="example2" aria-hidden="true">
+<aside class="modal fade" id="project2" tabindex="-1" aria-labelledby="example2" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -157,9 +146,9 @@
             </div>
         </div>
     </div>
-</div>
+</aside>
 
-<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="example3" aria-hidden="true">
+<aside class="modal fade" id="project3" tabindex="-1" aria-labelledby="example3" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -167,14 +156,14 @@
             </div>
             <div class="modal-body">
                 <img class="img-responsive" src="images/migration-800_large_1x.jpg" alt = "Picture of the migration website">
-                In 2015, I took CS 171 Data Visualizaiton trhough Harvard University.  As a final project, myself along with a fellow classmate chose
-                visualize the effects wage differentials have through migration on International Development.
+                In 2015, I took CS 171 Data Visualization through Harvard University.  As a final project, myself along with a fellow classmate, chose
+                to visualize the effects wage differentials have through migration on International Development.
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
-</div>
+</aside>
 </body>
 </html>
