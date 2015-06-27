@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id = "header">
+        <div id="title" class = "title">
+            <div>
+                <h1 class = "title_h1">FROGGER</h1>
+                <h2 class = "title_h2">but with bugs...and no frog!</h2>
+            </div>
+        </div>
+
+        <div id="score_title" class ="score_title">
+            <h3 id = "score" class = "score_h3">Level: 1</h3>
+        </div>
+    </div>
+
+    <div id = "article">
+        <div id="game-over-overlay" class = "gameover"></div>
+
+        <div id="game-over" class = "gameover">
+            <h1 class = "gameover_h1">GAME OVER</h1>
+            <button id="play-again" class = "gameover_button">Play Again</button>
+        </div>
+    </div>
+
+    <div id = "nav">
+        <div id = "instruction" class="instruction">
+            <h3 class = "instruction_title">Welcome to Frogger...sort of</h3>
+            <p class = "instruction_rules">See how many times you can navigate your sprite safely across the road.  After each successful trip the journey is going
+                to become a bit tougher.  Good Luck!!!</p>
+            <div>
+                <form class = "instruction_inputs">
+                    <input name="sprite_select" value="sprite_select" id = "m_sprite" type="radio">Male Sprite
+                    <input name="sprite_select" value="sprite_select" id = "f_sprite" type="radio">Female Sprite
+                </form>
+            </div>
+            <div>
+                <label>
+                        <a href="#" ID ="button" class="myButton">PLAY</a>
+                </label>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
