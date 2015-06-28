@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: black;
@@ -24,17 +25,15 @@ canvas {
 
 
 .title_h1{
-    font-family: sans-serif;
+    font:  45px sans-serif;
     margin-bottom: 0;
-    font-size: 45px;
     color: #00ff00;
 }
 
 
 .title_h2{
-    font-family: sans-serif;
+    font: 25px sans-serif;
     margin-top: 0;
-    font-size: 25px;
     color: #00ff00;
 }
 

@@ -1,3 +1,5 @@
+"use strict";
+
 /* Engine.js
  * This file provides the game loop functionality (update entities and render),
  * draws the initial game board on the screen, and then calls the update and
@@ -59,7 +61,7 @@ var Engine = (function(global) {
          * function again as soon as the browser is able to draw another frame.
          */
         win.requestAnimationFrame(main);
-    };
+    }
 
     /* This function does some initial setup that should only occur once,
      * particularly setting the lastTime variable that is required for the
@@ -190,11 +192,11 @@ var Engine = (function(global) {
         });
         document.getElementById('f_sprite').addEventListener('change', function(){
             player = new Player();
-            player.update()
-        })
+            player.update();
+        });
         document.getElementById('m_sprite').addEventListener('change', function(){
             player = new Player();
-            player.update()
+            player.update();
         });
     }
 
@@ -203,22 +205,22 @@ var Engine = (function(global) {
         intialize_sprites();
         isGameOver = false;
         level = 1;
-        document.getElementById('score').innerHTML = "Level: " + String(level)
+        document.getElementById('score').innerHTML = "Level: " + String(level);
         document.getElementById('game-over').style.display = 'none';
         document.getElementById('game-over-overlay').style.display = 'none';
-    };
+    }
 
     function levelUp() {
         if(player.y < 125){
-            level++
-            document.getElementById('score').innerHTML = "Level: " + String(level)
-            allEnemies.push(new Enemy())
+            level++;
+            document.getElementById('score').innerHTML = "Level: " + String(level);
+            allEnemies.push(new Enemy());
             player.x = 200;
             player.y = 380;
 
         }
 
-    };
+    }
 
     Resources.load([
         'images/stone-block.png',
@@ -237,4 +239,3 @@ var Engine = (function(global) {
      */
     global.ctx = ctx;
 })(this);
-

@@ -1,3 +1,4 @@
+"use strict";
 //Define Global variables
 var player;
 var allEnemies = [], isGameOver = false;
@@ -11,7 +12,7 @@ var Enemy = function() {
     //Initialize 3 different speeds
     this.speed = speed();
 
-    this.x = this.initial_x
+    this.x = this.initial_x;
     this.y = this.initial_y;
 
     //assign image of the bug
@@ -63,15 +64,15 @@ var Player = function() {
 };
 
 Player.prototype.update = function(dt) {
-    player.render();
-};
+    this.render();
+}
 
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-};
+}
 
 Player.prototype.handleInput = function(input) {
-    if(input == 'left' && this.x != 0){
+    if(input == 'left' && this.x !== 0){
         this.x = this.x - 100;
     }else if(input == 'right' && this.x != 400){
         this.x = this.x + 100;
@@ -80,14 +81,14 @@ Player.prototype.handleInput = function(input) {
     }else if(input == 'down' && this.y != -45){
         this.y = this.y - 85;
     }
-    player.update()
+    this.update()
 }
 
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
-    if(isGameOver == false) {
+    if(isGameOver === false) {
         var allowedKeys = {
             37: 'left',
             38: 'down',
