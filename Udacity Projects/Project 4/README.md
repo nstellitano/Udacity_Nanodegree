@@ -71,3 +71,13 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://nicoledominguez.com/portfolio/">http://nicoledominguez.com/portfolio/</a>
 * <a href="http://www.roxannecook.com/">http://www.roxannecook.com/</a>
 * <a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
+
+####Follow-up to Project 4: author: Nick Stellitano
+The challenge was accepted and adjustments to the code were made.  They are located at https://github.com/nstellitano/Udacity_Nanodegree/tree/master/Udacity%20Projects/Project%204
+
+The following files and changes were made:
+To help ensure the portfolio loaded with a score of 90 or better, certain optimization were added to include utilizing "async" on certain script tags, asynchronously load
+the font along with adding media to the css print file.  Grunt and gulp were utilized to minify certain files along with compressing images.
+
+In terms of FPS on Cam's pizza shop, numerous optimizations were done that helped streamline the code and prevent forced synchronous layout.  I also tried to manage the use of
+ layers so as to help with the painting.
